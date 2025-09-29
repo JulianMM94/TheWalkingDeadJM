@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - The Walking Dead</title>
+    <link
+      rel="icon"
+      href="../img/icon/LogoTWD.png"
+      type="image/png"
+      alt="Logo"
+    />
+    <link rel="stylesheet" href="../css/styleIndex.css" />
+    <link rel="stylesheet" href="../css/styleContacto.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="logo">
+        <a href="../html/index.html">
+          <img src="../img/icon/LogoTWD1.png" alt="Logo The Walking Dead" />
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="temporadas.html">Temporadas</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="titulo-pagina">Contacto</h1>
+      <form
+        class="formulario-contacto"
+        action="https://formsubmit.co/julian.martin.2112@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_next" value="../html/index.html" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nuevo Mensaje de Contacto TWD Fan Site"
+        />
+        <div class="campo-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="campo-form">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="campo-form">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+      </form>
+    </main>
+    <div class="mapa-centro">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20111.470973512616!2d-58.70393267174799!3d-34.616664768731184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbefbab8fac97%3A0xb6ccd39bd3eafda1!2sParque%20Leloir%2C%20B1715%20Villa%20Udaondo%2C%20Provincia%20de%20Buenos%20Aires!5e1!3m2!1ses-419!2sar!4v1759097998171!5m2!1ses-419!2sar"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer class="pie-pagina">
+      <div class="legales">
+        <p>
+          &copy; 2025 The Walking Dead Fan Site. Todos los derechos reservados.
+        </p>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://x.com/walkingdead_amc" target="_blank"
+          ><img src="../img/icon/X.png" alt="X"
+        /></a>
+        <a href="https://www.instagram.com/amcthewalkingdead/" target="_blank"
+          ><img src="../img/icon/IG.png" alt="Instagram"
+        /></a>
+        <a
+          href="https://www.facebook.com/TheWalkingDeadAMC?locale=es_LA"
+          target="_blank"
+          ><img src="../img/icon/FB.png" alt="Facebook"
+        /></a>
+        <a href="https://www.youtube.com/@TheWalkingDead" target="_blank"
+          ><img src="../img/icon/YT.png" alt="YouTube"
+        /></a>
+      </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>
